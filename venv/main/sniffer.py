@@ -152,7 +152,7 @@ def unpackJSON(JSON_string = b'', JSON_array = []):
         JSON_array += [JSON_string[2:stringLen].decode("utf-8")]
         JSON_string = JSON_string[stringLen:]
 
-        #print('Ale czemu to kurwa nie dziala:  ', len(JSON_array))
+        #print('Ale czemu to nie dziala:  ', len(JSON_array))
 
         return unpackJSON(JSON_string, JSON_array)
 
